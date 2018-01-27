@@ -349,3 +349,8 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# project specifics I guess
+*.$memlist
+*.idb
+*.suo
