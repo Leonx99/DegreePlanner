@@ -354,3 +354,8 @@ docs/_build/
 *.$memlist
 *.idb
 *.suo
+*.path
+*.ver
+*.bat
+*.exe
+*.dll
