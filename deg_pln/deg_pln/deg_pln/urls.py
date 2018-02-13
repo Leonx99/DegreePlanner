@@ -1,20 +1,17 @@
 """
-Definition of urls for deg_pln_mess.
+Definition of urls for deg_pln.
 """
 
-from django.urls import include, path
-from django.contrib import admin
+from django.conf.urls import include, url
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = [
-    path('new_app/', include('new_app.urls')),
-    path('admin/', admin.site.urls),
     # Examples:
-    # url(r'^$', deg_pln_mess.views.home, name='home'),
-    # url(r'^deg_pln_mess/', include('deg_pln_mess.deg_pln_mess.urls')),
+    # url(r'^$', deg_pln.views.home, name='home'),
+    # url(r'^deg_pln/', include('deg_pln.deg_pln.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
