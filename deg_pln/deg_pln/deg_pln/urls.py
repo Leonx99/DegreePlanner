@@ -2,13 +2,15 @@
 Definition of urls for deg_pln.
 """
 
-from django.conf.urls import include, url
+from django.urls import include, path
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
+from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = [
+    path('planner/', include('planner.urls')),
+    path('admin/', admin.site.urls),
     # Examples:
     # url(r'^$', deg_pln.views.home, name='home'),
     # url(r'^deg_pln/', include('deg_pln.deg_pln.urls')),
