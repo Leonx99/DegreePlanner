@@ -23,14 +23,18 @@ class EligibleView(generic.ListView):
         elig_class = elig_class.filter(taken=False) # filters all courses that aren't eligeble and haven't been taken yet
         for stuff in elig_class: # iterator
             req1 = stuff.pre_req1 # gets the data in pre_req1 field
-            #req2 = stuff.pre_req2
-            #req3 = stuff.pre_req3
-            c1 = Class.objects.get(name = req1) # gets the class(object) with the name and checks if that class (the prerequisite) has been taken
-            #c2 = Class.objects.get(name = req2)
-            #c3 = Class.objects.get(name = req3)
-            if c1.taken == True: #if the pre_req has been taken the class is updated to eligible.
+            if req1 == '':
                 stuff.elig = True
-                stuff.save() # saves the update
+                stuff.save()
+            else:
+                #req2 = stuff.pre_req2
+                #req3 = stuff.pre_req3
+                c1 = Class.objects.get(code = req1) # gets the class(object) with the name and checks if that class (the prerequisite) has been taken
+                #c2 = Class.objects.get(name = req2)
+                #c3 = Class.objects.get(name = req3)
+                if c1.taken == True: #if the pre_req has been taken the class is updated to eligible.
+                    stuff.elig = True
+                    stuff.save() # saves the update
         return Class.objects.filter(elig=True)
 
 class TakenView(generic.ListView):
