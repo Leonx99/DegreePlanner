@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SD-Project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/my_styles.css">
+
+    
+
+ 
+      
+  </head>
+    <body translate="no" ></body>
+     
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50"> 
+ <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="logo2.png" alt="logo" style="width:40px;">
+      </a> 
+     <a class="navbar-brand" href="#">Degree Planner</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        
+      </button>
+     
+     
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#homediv">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#missiondiv">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#csediv">CSE</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#sediv">SE</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#cpediv">CpE</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#tipsdiv">Tips</a>
+          </ul>
+        </div>
+    </nav>
+
+<div class="container-fluid">
+
+<!-- // Home -->
+<section class="home">
+    <div id="homediv" class="container-fluid">
+     <div class="content-wrap">
+            <p>“Have the courage to follow your heart and intuition. They somehow know what you truly want to become” ~ Steve Jobs</p>
+        </div>  
+    </div>
+</section>
+    
+<!-- // mission --> 
+<section class="mission">
+    <div id="missiondiv"  class="container-fluid">
+       <div class="colum-wrap">
+                <h1>Our Mission</h1>
+                <p>We know how stresful college can be. our degree planner can help you plan every semester.
+We provide a defoult degree plan that will guide you from the time you start your 
+first semester to your graduation. We also provide a customize degree plan where you will be able to
+ select classes that you want to take in a specific time. We want you to have the best experience 
+that you could possible have at the University of Texas at Arlington. </p>
+            
+        </div>
+    </div>
+</section>
+    
+<!-- // cse --> 
+<section class="cse">
+    <div id="csediv" class="container-fluid">
+        <!--<div id="cse-title"><h2>CSE</h2></div> -->
+        <div class="container">
+            <div class="panel panel-danger">
+                <div class="panel-heading">CSE</div>
+                <div class="panel-body">
+                    <div class="dropdown">
+                        Catalog Year: <select id="mySelectCse" onchange="onTableSelectedCse()">
+                            <option class="dropdown-item" href="#table2017Cse">2017</option>
+                            <option class="dropdown-item" href="#table2016Cse">2016</option>
+                        </select>   
+                        <!--/div-->
+                    </div> <!--class dropdown -->
+                </div> <!--panel-body -->
+                <div id="table2017Cse" class="table-responsive">
+                    <table  class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fall 2018</th>
+                                <th scope="col">Spring 2019</th>
+                                <th scope="col">Summer 2019</th>
+                                <th scope="col">Fall 2019</th>
+                                <th scope="col">Spring 2020</th>
+                                <th scope="col">Summer 2020</th>
+                                <th scope="col">Fall 2020</th>
+                                <th scope="col">Spring 2021</th>
+                                <th scope="col">Summer 2021</th>
+                                <th scope="col">Fall 2021</th>
+                                <th scope="col">Spring 2022</th>
+                                <th scope="col">Summer 2022</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>CSE 1310 Intro to Programming</td>
+                                <td>CSE 1320 Intermediate Programming</td>
+                                <td>HIST 1312</td>
+                                <td>CSE 132 OOP</td>
+                                <td>CSE 2312 Comp. Organization</td>
+                                <td>IE 2308 or ECON 2305</td>
+                                <td>CSE 3315 Theoretical CS</td>
+                                <td>CSE 3311 OO Sortfware Eng</td>
+                                <td>COMS 2302 Pro. and Tech. Com.</td>
+                                <td>CSE 4361 Software Design Patterns</td>
+                                <td>Technical Elective</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>CSE 1105 Intro to CSE</td>
+                                <td>CSE 2315 Discrete Structures</td>
+                                <td>POLS 2311</td>
+                                <td>CSE 2320 Algorithms and Data Structures</td>
+                                <td>MATH 2425 Calculus II</td>
+                                <td>Foreing Lang. </td>
+                                <td>CSE 3380 Linear Algebra</td>
+                                <td>IE Eng. Prob. and Stats</td>
+                                <td>MATH Elective</td>
+                                <td>CSE 4321 Software Testing</td>
+                                <td>CSE 4217 Senior Design II</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ENGR 1300 </td>
+                                <td>ENGL 1301</td>
+                                <td></td>
+                                <td>PHYS 1443</td>
+                                <td>CSE 3302 Prog. Languages</td>
+                                <td></td>
+                                <td>Arts Elective</td>
+                                <td>CSE 3310 Intro to Software Engr.</td>
+                                <td></td>
+                                <td>CSE 4314 Pro. Practices</td>
+                                <td>Science Elective</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>MATH Calculus I</td>
+                                <td>HIST 1311</td>
+                                <td>Foreing Lang.</td>
+                                <td>POLS 2312</td>
+                                <td>PHYS 1444</td>
+                                <td></td>
+                                <td>CSE 3330 Databases</td>
+                                <td>CSE 3320 Op. Systems</td>
+                                <td></td>
+                                <td>CSE 4316 Senior Design I</td>
+                                <td>CSE 4322 Software Proj. Mang.</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- class table responsive -->
+                <div id="table2016Cse"  class="table-responsive">
+                    <table  class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fall 2016</th>
+                                <th scope="col">Spring 2017</th>
+                                <th scope="col">Summer 2017</th>
+                                <th scope="col">Fall 2017</th>
+                                <th scope="col">Spring 2018</th>
+                                <th scope="col">Summer 2018</th>
+                                <th scope="col">Fall 2018</th>
+                                <th scope="col">Spring 2019</th>
+                                <th scope="col">Summer 2019</th>
+                                <th scope="col">Fall 2019</th>
+                                <th scope="col">Spring 2020</th>
+                                <th scope="col">Summer 2020</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>CSE 1310 Intro to Programming</td>
+                                <td>CSE 1320 Intermediate Programming</td>
+                                <td>HIST 1312</td>
+                                <td>CSE 132 OOP</td>
+                                <td>CSE 2312 Comp. Organization</td>
+                                <td>IE 2308 or ECON 2305</td>
+                                <td>CSE 3315 Theoretical CS</td>
+                                <td>CSE 3311 OO Sortfware Eng</td>
+                                <td>COMS 2302 Pro. and Tech. Com.</td>
+                                <td>CSE 4361 Software Design Patterns</td>
+                                <td>Technical Elective</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>CSE 1105 Intro to CSE</td>
+                                <td>CSE 2315 Discrete Structures</td>
+                                <td>POLS 2311</td>
+                                <td>CSE 2320 Algorithms and Data Structures</td>
+                                <td>MATH 2425 Calculus II</td>
+                                <td>Foreing Lang. </td>
+                                <td>CSE 3380 Linear Algebra</td>
+                                <td>IE Eng. Prob. and Stats</td>
+                                <td>MATH Elective</td>
+                                <td>CSE 4321 Software Testing</td>
+                                <td>CSE 4217 Senior Design II</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ENGR 1300 </td>
+                                <td>ENGL 1301</td>
+                                <td></td>
+                                <td>PHYS 1443</td>
+                                <td>CSE 3302 Prog. Languages</td>
+                                <td></td>
+                                <td>Arts Elective</td>
+                                <td>CSE 3310 Intro to Software Engr.</td>
+                                <td></td>
+                                <td>CSE 4314 Pro. Practices</td>
+                                <td>Science Elective</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>MATH Calculus I</td>
+                                <td>HIST 1311</td>
+                                <td>Foreing Lang.</td>
+                                <td>POLS 2312</td>
+                                <td>PHYS 1444</td>
+                                <td></td>
+                                <td>CSE 3330 Databases</td>
+                                <td>CSE 3320 Op. Systems</td>
+                                <td></td>
+                                <td>CSE 4316 Senior Design I</td>
+                                <td>CSE 4322 Software Proj. Mang.</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div> <!--class="panel panel-default -->
+        </div> <!--class="container -->
+    </div> <!--id="csediv" -->
+</section> <!--cse section -->
+
+ <!-- // se --> 
+<section class="se">
+    <div id="sediv" class="container-fluid">
+        <!--<div id="se-title"><h2>SE</h2></div>-->
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">SE</div>
+                <div class="panel-body">
+                    <div class="dropdown">
+                        Catalog Year: <select id="mySelectSe" onchange="onTableSelectedSe()">
+                            <option class="dropdown-item" href="#table2017Se">2017</option>
+                            <option class="dropdown-item" href="#table2016Se">2016</option>
+                        </select>  
+                    </div> <!--class dropdown -->    
+                </div><!--panel-body -->
+                <div id="table2017Se" class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fall 2018</th>
+                                <th scope="col">Spring 2019</th>
+                                <th scope="col">Summer 2019</th>
+                                <th scope="col">Fall 2019</th>
+                                <th scope="col">Spring 2020</th>
+                                <th scope="col">Summer 2020</th>
+                                <th scope="col">Fall 2020</th>
+                                <th scope="col">Spring 2021</th>
+                                <th scope="col">Summer 2021</th>
+                                <th scope="col">Fall 2021</th>
+                                <th scope="col">Spring 2022</th>
+                                <th scope="col">Summer 2022</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>CSE 1310 Intro to Programming</td>
+                                <td>CSE 1320 Intermediate Programming</td>
+                                <td>HIST 1312</td>
+                                <td>CSE 132 OOP</td>
+                                <td>CSE 2312 Comp. Organization</td>
+                                <td>IE 2308 or ECON 2305</td>
+                                <td>CSE 3315 Theoretical CS</td>
+                                <td>CSE 3311 OO Sortfware Eng</td>
+                                <td>COMS 2302 Pro. and Tech. Com.</td>
+                                <td>CSE 4361 Software Design Patterns</td>
+                                <td>Technical Elective</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>CSE 1105 Intro to CSE</td>
+                                <td>CSE 2315 Discrete Structures</td>
+                                <td>POLS 2311</td>
+                                <td>CSE 2320 Algorithms and Data Structures</td>
+                                <td>MATH 2425 Calculus II</td>
+                                <td>Foreing Lang. </td>
+                                <td>CSE 3380 Linear Algebra</td>
+                                <td>IE Eng. Prob. and Stats</td>
+                                <td>MATH Elective</td>
+                                <td>CSE 4321 Software Testing</td>
+                                <td>CSE 4217 Senior Design II</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ENGR 1300 </td>
+                                <td>ENGL 1301</td>
+                                <td></td>
+                                <td>PHYS 1443</td>
+                                <td>CSE 3302 Prog. Languages</td>
+                                <td></td>
+                                <td>Arts Elective</td>
+                                <td>CSE 3310 Intro to Software Engr.</td>
+                                <td></td>
+                                <td>CSE 4314 Pro. Practices</td>
+                                <td>Science Elective</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>MATH Calculus I</td>
+                                <td>HIST 1311</td>
+                                <td>Foreing Lang.</td>
+                                <td>POLS 2312</td>
+                                <td>PHYS 1444</td>
+                                <td></td>
+                                <td>CSE 3330 Databases</td>
+                                <td>CSE 3320 Op. Systems</td>
+                                <td></td>
+                                <td>CSE 4316 Senior Design I</td>
+                                <td>CSE 4322 Software Proj. Mang.</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- class table responsive -->
+                <div id="table2016Se"  class="table-responsive">
+                    <table  class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fall 2016</th>
+                                <th scope="col">Spring 2017</th>
+                                <th scope="col">Summer 2017</th>
+                                <th scope="col">Fall 2017</th>
+                                <th scope="col">Spring 2018</th>
+                                <th scope="col">Summer 2018</th>
+                                <th scope="col">Fall 2018</th>
+                                <th scope="col">Spring 2019</th>
+                                <th scope="col">Summer 2019</th>
+                                <th scope="col">Fall 2019</th>
+                                <th scope="col">Spring 2020</th>
+                                <th scope="col">Summer 2020</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>CSE 1310 Intro to Programming</td>
+                                <td>CSE 1320 Intermediate Programming</td>
+                                <td>HIST 1312</td>
+                                <td>CSE 132 OOP</td>
+                                <td>CSE 2312 Comp. Organization</td>
+                                <td>IE 2308 or ECON 2305</td>
+                                <td>CSE 3315 Theoretical CS</td>
+                                <td>CSE 3311 OO Sortfware Eng</td>
+                                <td>COMS 2302 Pro. and Tech. Com.</td>
+                                <td>CSE 4361 Software Design Patterns</td>
+                                <td>Technical Elective</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>CSE 1105 Intro to CSE</td>
+                                <td>CSE 2315 Discrete Structures</td>
+                                <td>POLS 2311</td>
+                                <td>CSE 2320 Algorithms and Data Structures</td>
+                                <td>MATH 2425 Calculus II</td>
+                                <td>Foreing Lang. </td>
+                                <td>CSE 3380 Linear Algebra</td>
+                                <td>IE Eng. Prob. and Stats</td>
+                                <td>MATH Elective</td>
+                                <td>CSE 4321 Software Testing</td>
+                                <td>CSE 4217 Senior Design II</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ENGR 1300 </td>
+                                <td>ENGL 1301</td>
+                                <td></td>
+                                <td>PHYS 1443</td>
+                                <td>CSE 3302 Prog. Languages</td>
+                                <td></td>
+                                <td>Arts Elective</td>
+                                <td>CSE 3310 Intro to Software Engr.</td>
+                                <td></td>
+                                <td>CSE 4314 Pro. Practices</td>
+                                <td>Science Elective</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>MATH Calculus I</td>
+                                <td>HIST 1311</td>
+                                <td>Foreing Lang.</td>
+                                <td>POLS 2312</td>
+                                <td>PHYS 1444</td>
+                                <td></td>
+                                <td>CSE 3330 Databases</td>
+                                <td>CSE 3320 Op. Systems</td>
+                                <td></td>
+                                <td>CSE 4316 Senior Design I</td>
+                                <td>CSE 4322 Software Proj. Mang.</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!--end of table 2016 div -->
+                
+            </div> <!--class="panel panel-default -->
+        </div> <!--class="container -->
+        
+    </div> <!--id="sediv" -->
+</section> <!--se section -->
+    
+<!-- // cpe --> 
+<section class="cpe">
+    <div id="cpediv" class="container-fluid">
+        <!-- <div id="cpe-title"><h2>CpE</h2></div>-->
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">CpE</div>
+                <div class="panel-body">
+                    <div class="dropdown">
+                       Catalog Year: <select id="mySelectCpe" onchange="onTableSelectedCpe()">
+                            <option class="dropdown-item" href="#table2017Cpe">2017</option>
+                            <option class="dropdown-item" href="#table2016Cpe">2016</option>
+                        </select>  
+                    </div> <!--class dropdown -->
+                </div> <!--panel-body -->
+                <div id="table2017Cpe" class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fall 2018</th>
+                                <th scope="col">Spring 2019</th>
+                                <th scope="col">Summer 2019</th>
+                                <th scope="col">Fall 2019</th>
+                                <th scope="col">Spring 2020</th>
+                                <th scope="col">Summer 2020</th>
+                                <th scope="col">Fall 2020</th>
+                                <th scope="col">Spring 2021</th>
+                                <th scope="col">Summer 2021</th>
+                                <th scope="col">Fall 2021</th>
+                                <th scope="col">Spring 2022</th>
+                                <th scope="col">Summer 2022</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>CSE 1310 Intro to Programming</td>
+                                <td>CSE 1320 Intermediate Programming</td>
+                                <td>HIST 1312</td>
+                                <td>CSE 132 OOP</td>
+                                <td>CSE 2312 Comp. Organization</td>
+                                <td>IE 2308 or ECON 2305</td>
+                                <td>CSE 3315 Theoretical CS</td>
+                                <td>CSE 3311 OO Sortfware Eng</td>
+                                <td>COMS 2302 Pro. and Tech. Com.</td>
+                                <td>CSE 4361 Software Design Patterns</td>
+                                <td>Technical Elective</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>CSE 1105 Intro to CSE</td>
+                                <td>CSE 2315 Discrete Structures</td>
+                                <td>POLS 2311</td>
+                                <td>CSE 2320 Algorithms and Data Structures</td>
+                                <td>MATH 2425 Calculus II</td>
+                                <td>Foreing Lang. </td>
+                                <td>CSE 3380 Linear Algebra</td>
+                                <td>IE Eng. Prob. and Stats</td>
+                                <td>MATH Elective</td>
+                                <td>CSE 4321 Software Testing</td>
+                                <td>CSE 4217 Senior Design II</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ENGR 1300 </td>
+                                <td>ENGL 1301</td>
+                                <td></td>
+                                <td>PHYS 1443</td>
+                                <td>CSE 3302 Prog. Languages</td>
+                                <td></td>
+                                <td>Arts Elective</td>
+                                <td>CSE 3310 Intro to Software Engr.</td>
+                                <td></td>
+                                <td>CSE 4314 Pro. Practices</td>
+                                <td>Science Elective</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>MATH Calculus I</td>
+                                <td>HIST 1311</td>
+                                <td>Foreing Lang.</td>
+                                <td>POLS 2312</td>
+                                <td>PHYS 1444</td>
+                                <td></td>
+                                <td>CSE 3330 Databases</td>
+                                <td>CSE 3320 Op. Systems</td>
+                                <td></td>
+                                <td>CSE 4316 Senior Design I</td>
+                                <td>CSE 4322 Software Proj. Mang.</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- class table responsive -->
+                 <div id="table2016Cpe"  class="table-responsive">
+                    <table  class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fall 2016</th>
+                                <th scope="col">Spring 2017</th>
+                                <th scope="col">Summer 2017</th>
+                                <th scope="col">Fall 2017</th>
+                                <th scope="col">Spring 2018</th>
+                                <th scope="col">Summer 2018</th>
+                                <th scope="col">Fall 2018</th>
+                                <th scope="col">Spring 2019</th>
+                                <th scope="col">Summer 2019</th>
+                                <th scope="col">Fall 2019</th>
+                                <th scope="col">Spring 2020</th>
+                                <th scope="col">Summer 2020</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>CSE 1310 Intro to Programming</td>
+                                <td>CSE 1320 Intermediate Programming</td>
+                                <td>HIST 1312</td>
+                                <td>CSE 132 OOP</td>
+                                <td>CSE 2312 Comp. Organization</td>
+                                <td>IE 2308 or ECON 2305</td>
+                                <td>CSE 3315 Theoretical CS</td>
+                                <td>CSE 3311 OO Sortfware Eng</td>
+                                <td>COMS 2302 Pro. and Tech. Com.</td>
+                                <td>CSE 4361 Software Design Patterns</td>
+                                <td>Technical Elective</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>CSE 1105 Intro to CSE</td>
+                                <td>CSE 2315 Discrete Structures</td>
+                                <td>POLS 2311</td>
+                                <td>CSE 2320 Algorithms and Data Structures</td>
+                                <td>MATH 2425 Calculus II</td>
+                                <td>Foreing Lang. </td>
+                                <td>CSE 3380 Linear Algebra</td>
+                                <td>IE Eng. Prob. and Stats</td>
+                                <td>MATH Elective</td>
+                                <td>CSE 4321 Software Testing</td>
+                                <td>CSE 4217 Senior Design II</td>
+                                <td>Technical Elective</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ENGR 1300 </td>
+                                <td>ENGL 1301</td>
+                                <td></td>
+                                <td>PHYS 1443</td>
+                                <td>CSE 3302 Prog. Languages</td>
+                                <td></td>
+                                <td>Arts Elective</td>
+                                <td>CSE 3310 Intro to Software Engr.</td>
+                                <td></td>
+                                <td>CSE 4314 Pro. Practices</td>
+                                <td>Science Elective</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>MATH Calculus I</td>
+                                <td>HIST 1311</td>
+                                <td>Foreing Lang.</td>
+                                <td>POLS 2312</td>
+                                <td>PHYS 1444</td>
+                                <td></td>
+                                <td>CSE 3330 Databases</td>
+                                <td>CSE 3320 Op. Systems</td>
+                                <td></td>
+                                <td>CSE 4316 Senior Design I</td>
+                                <td>CSE 4322 Software Proj. Mang.</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!--end of table 2016 div -->
+                
+            </div> <!--class="panel panel-default -->
+        </div> <!--class="container -->
+    </div> <!--id="cpe div" -->
+</section> <!--cpe section -->
+    
+<!-- // tips --> 
+<section class="tips">
+    <div id="tipsdiv" class="container-fluid">
+        <div id="tips-title"><h2>Tips</h2></div>
+        <!--first image with tip -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img-rounded">
+                    <a href="/images/student-one-849825__340%20(2).jpg" >
+                       <img class="img-responsive" src="images/student-one-849825__340%20(2).jpg" alt="Student" style="width: 100%">
+                    </a>
+                </div> <!-- thumbnail -->
+                <div class="container">
+                    <p>Click on button</p>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#tip-one">Study tip</button>
+                    <div id="tip-one" class="collapse">
+                        Space it out your study time. Studies has shown that is better to study for 30 minutes and rest for 10 minutes. The brain needs to rest to synthesize the information. 
+                    </div>
+                </div>
+            </div> <!-- col-md-4 and end of first tip-->
+         
+         <!--Second image and tip -->
+         <div class="col-md-4">
+                <div class="img-rounded">
+                    <a href="/images/school-book-two-1560339__340%20(2).jpg" >
+                       <img class="img-responsive" src="images/school-book-two-1560339__340%20(2).jpg" alt="Notebook" style="width: 100%">
+                    </a>
+                </div> <!-- thumbnail -->
+             <div class="container">
+                    <p>Click on button</p>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#tip-two">Study tip</button>
+                    <div id="tip-two" class="collapse">
+                        Make a study plan. It is important to have a plan and . 
+                    </div>
+                </div>
+            </div> <!-- col-md-4 and end of second tip-->
+            <!--starting of third tip -->
+            <div class="col-md-4">
+                <div class="img-rounded">
+                    <a href="/images/download-books2%20(2).jpg" >
+                       <img class="img-responsive" src="images/download-books2%20(2).jpg" alt="Books" style="width: 100%">
+                    </a>
+                </div> <!-- thumbnail -->
+                <div class="container">
+                    <p>Click on button</p>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#tip-three">Study tip</button>
+                    <div id="tip-three" class="collapse">
+                        Space it out your study time. Studies has shown that is better to study for 30 minutes and rest for 10 minutes. The brain needs to rest to synthesize the information. 
+                    </div>
+                </div>
+            </div> <!-- col-md-4 and end of third tip -->
+            
+        </div> <!-- row --> 
+    </div> <!-- id/container-fluid -->
+</section>
+    
+<!-- // legal --> 
+<section class="legal">
+    <div id="legaldiv" class="container-fluid">
+    </div>
+</section>
+    
+    
+
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    <!--Scripts (javascript) go here  -->
+    
+    <!--this function is for the dropdown (Catalog year for defaul plan) -->
+    <script type="text/javascript">
+        /* these 3 functions use to hide the tables of 2016 for each section 
+        when the page is loaded. so the user will only see 2017 tables and then 
+        click on the dropdown for the other option*/
+        function cseOnload(){
+            document.getElementById("table2016Cse").style.display = 'none';
+        }
+        
+        function seOnload(){
+            document.getElementById("table2016Se").style.display = 'none';
+        }
+        
+        function cpeOnload(){
+            document.getElementById("table2016Cpe").style.display = 'none';
+        }
+        /*the start function is use to call all the [ ]load functions at onece because 
+        if i do it separatly it will only work for one degree/section*/
+        function start(){
+            cseOnload();
+            seOnload();
+            cpeOnload();
+        }
+        /* window.onload is use to call the start function. and its use to execute
+        the functions inside start as soon as the page finishes loading*/
+        window.onload = start();
+        
+        /* this function is use to change from table to table in the dropdown
+        and for Cse section*/    
+        function onTableSelectedCse(){ 
+            var table=document.getElementById("mySelectCse").value;
+            if(table == "2017"){
+                document.getElementById("table2016Cse").style.display='none';
+                document.getElementById("table2017Cse").style.display='';
+            }
+            else{
+                document.getElementById("table2017Cse").style.display='none';
+                document.getElementById("table2016Cse").style.display='';
+            }
+        } 
+       
+        /* this function is use to change from table to table in the dropdown
+        and for Se section*/ 
+        function onTableSelectedSe(){
+            var table=document.getElementById("mySelectSe").value;
+            if(table == "2017"){
+                document.getElementById("table2016Se").style.display='none';
+                document.getElementById("table2017Se").style.display='';
+            }
+            else{
+                document.getElementById("table2017Se").style.display='none';
+                document.getElementById("table2016Se").style.display='';
+            }
+        } 
+        
+        /* this function is use to change from table to table in the dropdown
+        and for Cpe section*/ 
+        function onTableSelectedCpe(){
+            var table=document.getElementById("mySelectCpe").value;
+            if(table == "2017"){
+                document.getElementById("table2016Cpe").style.display='none';
+                document.getElementById("table2017Cpe").style.display='';
+            }
+            else{
+                document.getElementById("table2017Cpe").style.display='none';
+                document.getElementById("table2016Cpe").style.display='';
+            }
+        } 
+        </script>
+    
+            
+    
+</body>
+     
+</html>

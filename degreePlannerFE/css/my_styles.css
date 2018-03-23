@@ -1,0 +1,147 @@
+  body {
+  position: relative;
+}
+
+
+
+.home {
+  
+  padding-top: 70px;
+  height: 500px;
+  color: #fff;
+  background-image: url(P051610SA-0032-graduation.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+      
+}
+
+/*_________________
+------- mission-----*/
+
+.mission {
+  padding-top: 30px;
+  padding-bottom: 900;    
+  margin: 0 auto;
+  color: #fff;
+  background: #33658A;
+}
+.colum-wrap{
+    font-family: sans-serif;
+    color: black;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/*___________________
+__________ CSE______*/
+.cse {
+  padding-top: 30px;
+  padding-bottom: 50px;    
+  margin: 0 auto;
+  color: #fff;
+  background: #F26419;
+}
+#cse-title{
+  font-family: sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;  
+}
+
+/* this is the dropdown for the 
+catalog year (default plan)*/
+#mySelectCse{
+    margin-bottom: 8px;
+}
+
+
+/*__________________
+___________SE_______*/    
+.se {
+  padding-top: 30px;
+  padding-bottom: 50px;   
+  margin: 0 auto;
+  color: #fff;
+  background: #D8CBC7;
+}
+#se-title{
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* this is the dropdown for the 
+catalog year (default plan)*/
+#mySelectSe{
+    margin-bottom: 8px;
+}
+table{
+    font-size: 9px;
+}
+th, td{
+    padding: 8px;
+}
+
+    
+
+
+/*__________________
+____________CpE_____*/
+.cpe {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  color: #fff;
+  background: #F26419;
+}
+#cpe-title{
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+/* this is the dropdown for the 
+catalog year (default plan)*/
+#mySelectCpe{
+    margin-bottom: 8px;
+}
+
+/*___________________
+____________TIPS_____*/
+.tips {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+  color: #fff;
+  background:#2F4858;
+}
+#tips-title{
+    font-family: sans-serif;
+    color: beige;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+/*___________________
+_____________Legal____*/    
+.legal {
+  padding-top: 50px;
+  height: 200px;
+  color: #fff;
+  background:#302B27;
+}
+
+
+.content-wrap{
+    font-family: cursive;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 80px;
+ 
